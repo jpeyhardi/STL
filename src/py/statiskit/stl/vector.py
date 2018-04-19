@@ -55,6 +55,15 @@ def decorator(cls):
 
         return __getitem__, __setitem__
 
+    def __eq__(self, other):
+        if isinstance(other, self.__class__):
+            return all(self[index] == other[index] for index in range(len(self)))
+        else:
+            return False
+
+    cls.__eq__ = __eq__
+    del __eq__
+
     cls.__getitem__, cls.__setitem__ = wrapper_at(cls.at)
     del cls.at
 
