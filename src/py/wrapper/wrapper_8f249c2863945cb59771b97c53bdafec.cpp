@@ -26,7 +26,7 @@ void wrapper_8f249c2863945cb59771b97c53bdafec()
     boost::python::scope().attr("std") = module_a5e4e9231d6351ccb0e06756b389f0af;
     boost::python::scope scope_a5e4e9231d6351ccb0e06756b389f0af = module_a5e4e9231d6351ccb0e06756b389f0af;
     boost::python::class_< struct ::std::binary_function< unsigned long int, unsigned long int, bool >, autowig::Held< struct ::std::binary_function< unsigned long int, unsigned long int, bool > >::Type > class_8f249c2863945cb59771b97c53bdafec("_BinaryFunction_8f249c2863945cb59771b97c53bdafec", "", boost::python::no_init);
-    class_8f249c2863945cb59771b97c53bdafec.def(boost::python::init< struct ::std::binary_function< unsigned long int, unsigned long int, bool > const & >(""));
     class_8f249c2863945cb59771b97c53bdafec.def(boost::python::init<  >(""));
+    class_8f249c2863945cb59771b97c53bdafec.def(boost::python::init< struct ::std::binary_function< unsigned long int, unsigned long int, bool > const & >(""));
 
 }

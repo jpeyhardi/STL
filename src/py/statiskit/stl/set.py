@@ -27,6 +27,15 @@ def decoration(cls):
 
     cls.__init__ = wrapper__init__(cls.__init__)
 
+    # def __eq__(self, other):
+    # if isinstance(other, self.__class__):
+    #     return all(self[index] == other[index] for index in range(len(self)))
+    # else:
+    #     return False
+
+    # cls.__eq__ = __eq__
+    # del __eq__
+
     def __str__(self):
         return "{" + ", ".join(str(value) for value in self) + "}"
 
